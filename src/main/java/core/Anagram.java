@@ -8,7 +8,7 @@ public class Anagram {
              
               int value = 0;
               for (int i = 0; i < s.replaceAll("\\s", "").length(); i++) {
-                     value += (s.replaceAll("\\s", "").toLowerCase().charAt(i));
+            	  value += (s.replaceAll("\\s", "").toLowerCase().charAt(i));
                      value -= (t.replaceAll("\\s", "").toLowerCase().charAt(i));
               }
               return value == 0;
